@@ -1,0 +1,30 @@
+---
+import GlobalStyle from "../../styles/global.astro";
+
+import Header from "../../components/es/Header.astro";
+import Content from "../../components/es/IndexContent.astro";
+import AboutMe from "../../components/es/AboutMe.astro";
+import TechStack from "../../components/es/TechStack.astro";
+---
+<!DOCTYPE html>
+<GlobalStyle />
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+		<title>Pablo Vidal — Página personal</title>
+	</head>
+	<body>
+		<main>
+			<Header />
+			<hr />
+			<Content />
+			<hr />
+			<TechStack />
+		</main>
+		<footer>
+			<AboutMe />
+		</footer>
+	</body>
+</html>

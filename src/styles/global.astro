@@ -1,0 +1,172 @@
+<style is:global>
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700");
+
+:root {
+	color-scheme: light dark;
+	--background-color: light-dark(#d6d6d6, #141a1f);
+	--foreground-color: light-dark(#f2f2f3, #262b31);
+	--accent-color: #51cba9;
+	--text-color: light-dark(#1e1e1e, #d8d8d8);
+}
+
+body {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 68rem;
+	font-family: "Roboto Mono", monospace;
+	background-color: var(--background-color);
+}
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	#headers {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	svg {
+		height: 5rem;
+		width: 5rem;
+	}
+}
+
+h1 {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 3rem;
+	color: var(--text-color);
+}
+
+h2 {
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+h3 {
+	margin: 0;
+	font-family: "JetBrains Mono", monospace;
+	color: var(--accent-color);
+}
+
+main {
+	overflow: hidden;
+	margin-bottom: 2rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: var(--foreground-color);
+	font-family: "Roboto Mono", monospace;
+	color: var(--text-color);
+}
+
+h4 {
+	position: relative;
+	margin: 0;
+	margin-top: 0.75rem;
+	padding: 0;
+}
+
+ul {
+	margin: 0;
+	padding-left: 2rem;
+	list-style-type: none;
+}
+
+li {
+	position: relative;
+	margin-bottom: 0.5rem;
+}
+
+li::before {
+	content: "";
+	position: absolute;
+	left: -0.755rem;
+    top: 0;
+    bottom: 0;
+    width: 0.126rem;
+    background: var(--text-color);
+	filter: brightness(50%);
+}
+
+.identation-symbol {
+	position: absolute;
+	left: -2rem;
+	top: -0.2rem;
+	font-size: 1.2rem;
+	color: var(--text-color);
+	filter: brightness(50%);
+}
+
+hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: none;
+	height: 0.18rem;
+	background-color: var(--background-color);
+	filter: opacity(0.6);
+}
+
+a {
+	color: var(--accent-color);
+	font-weight: bold;
+}
+
+a:visited {
+	color: color-mix(in srgb, var(--accent-color), black 25%);
+}
+
+p {
+	margin: 0;
+}
+
+#tech-stack-icons {
+	overflow: scroll;
+	max-height: 7rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+
+	* {
+		height: 5rem;
+		width: 5rem;
+		padding: 1rem;
+
+		@media (prefers-color-scheme: light) {
+			border-radius: 25%;
+			background-color: color-mix(var(--text-color) 90%, transparent);
+		}
+	}
+}
+
+footer {
+	overflow: hidden;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+	background-color: var(--foreground-color);
+	font-family: "Roboto Mono", monospace;
+	color: var(--text-color);
+	
+	p {
+		filter: brightness(80%);
+	}
+}
+
+#email {
+	a {
+		font-weight: normal;
+	}
+}
+</style>
