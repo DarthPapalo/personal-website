@@ -1,1 +1,9 @@
-<meta http-equiv="refresh" content="0;url=/es/" />
+---
+import { base, i18n } from "astro:config/client";
+
+export const prerender = false;
+
+const targetLocale = Astro.preferredLocale || i18n?.defaultLocale; 
+
+return Astro.redirect(`${base}/${targetLocale}/`);
+---
