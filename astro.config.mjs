@@ -7,7 +7,6 @@ export default defineConfig({
     defaultLocale: "en",
     routing: {
         prefixDefaultLocale: true,
-        redirectToDefaultLocale: true
     }
   },
   site: "https://darthpapalo.github.io",
