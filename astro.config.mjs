@@ -4,9 +4,10 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   i18n: {
     locales: ["es", "en"],
-    defaultLocale: "es",
+    defaultLocale: "en",
     routing: {
-        prefixDefaultLocale: true
+        prefixDefaultLocale: true,
+        redirectToDefaultLocale: true
     }
   },
   site: "https://darthpapalo.github.io",

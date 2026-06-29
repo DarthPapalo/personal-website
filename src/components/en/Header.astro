@@ -1,10 +1,12 @@
 ---
 import Avatar from "../Avatar.astro";
+import { base } from "astro:config/client";
 ---
 <header>
     <div id="headers">
         <h1>Pablo Vidal Vaquero</h1>
         <h3>Bioinformatician & software developer</h3>
     </div>
+    <a href=`${base}/es/` >Versión en Español</a>
     <Avatar />
 </header>
